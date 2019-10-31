@@ -19,6 +19,17 @@ Is this what we want?
 
 See branch "filter-front".
 
+### Trying with --prune-empty
+
+See branch `git-filter-prune`
+
+
+The command ran was
+
+```sh
+git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch --prune-empty front front.json" HEAD
+```
+
 
 ## Using git obliterate
 
