@@ -19,6 +19,20 @@ Is this what we want?
 
 See branch "filter-front".
 
+### Trying with --prune-empty
+
+See branch `git-filter-prune`
+
+
+The command ran was
+
+```sh
+git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch front front.json" --prune-empty HEAD
+```
+
+This feels like a safer version of what `git obliterate` does (see below). In this case, commits with front-only
+code were removed.
+
 
 ## Using git obliterate
 
