@@ -20,3 +20,14 @@ Is this what we want?
 See branch "filter-front".
 
 
+## Using git obliterate
+
+Cf. this command from [git extra](https://github.com/tj/git-extras/blob/master/Commands.md#git-obliterate)
+
+See `git-obliterate` branch for the result.
+
+The command ran was:
+
+```sh
+git obliterate front front.json
+```
