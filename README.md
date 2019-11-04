@@ -54,6 +54,19 @@ However the commits which had only front code were fully removed. Only commits
 with both back and front impacted remained, with only the back part actually
 remaining.
 
+## Using `git-filter-repo`
+
+As per Git version 2.24.0, the recommended way to clean repository history is to use
+[git-filter-repo](https://github.com/newren/git-filter-repo).
+
+What is tried here is:
+
+```sh
+
+git-filter-repo --path front --path front.json --invert-paths
+
+```
+
 
 ## TODO
 What impacts on tags?
